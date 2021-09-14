@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2? familia=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: darkkhaki;
+    height: 80px;
+    width: 100%;
+
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform:uppercase;
+}
+
+
+li a.active, li a:hover{
+    background: slateblue;
+    transition: .7s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url(img/portada.jpg) no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    height: calc(100vh - 80px);
+    
+}
+
+section h1{
+    color: cornsilk;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+
+section a{
+    background: red;
+    color: cornsilk;
+    font-size: 23px;
+    position: relative;
+    top: 300px;
+    left: 230px;
+    border-radius: 3px;
+    padding: 7px;
+}
+section a:hover{
+    transition-delay: 0.2s;
+}
+
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+}
+@media(min-width: 952px){
+   
+    
+     
+}
+
+
+@media(max-width: 508px){ /*CELULAR*/
+   .checkbtn{
+       display: block;
+   }
+
+   ul{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background:black;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+   }
+
+   
+
+   nav ul li{
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+   }
+
+   nav ul li a{
+       font-size: 22px;
+       
+   }
+
+   li a:hover , li a.active{
+       background: none;
+       color:#273c75;
+   }
+
+   #check:checked ~ ul{
+       left:0;
+   }
+
+    
+}
+
+
+
